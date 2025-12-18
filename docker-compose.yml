@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   api:
-    container_name: Nest CI/CD Docker Render Deploy
+    container_name: nest-ci-cd-docker-api
     build:
       context: .
       dockerfile: Dockerfile
