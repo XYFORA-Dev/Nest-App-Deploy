@@ -1,9 +1,7 @@
 import { Module } from "@nestjs/common/decorators/modules";
 import { MongooseModule } from "@nestjs/mongoose";
-import { AppController } from "./app.controller";
 import { BookModule } from "./book/book.module";
 import { ConfigModule } from "@nestjs/config";
-import { AppService } from "./app.service";
 
 @Module({
   imports: [
@@ -21,7 +19,7 @@ import { AppService } from "./app.service";
     ),
     BookModule
   ],
-  controllers: [AppController],
-  providers: [AppService]
+  controllers: [],
+  providers: []
 })
 export class AppModule { };
